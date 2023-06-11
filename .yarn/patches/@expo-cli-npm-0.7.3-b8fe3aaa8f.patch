@@ -1,0 +1,22 @@
+diff --git a/build/src/start/server/webpack/WebpackBundlerDevServer.js b/build/src/start/server/webpack/WebpackBundlerDevServer.js
+index d52a186f3b7e724ecae09de8992c52fba48d7146..072399898b0005a9d6f48bff9dc9cedd4f2984ce 100644
+--- a/build/src/start/server/webpack/WebpackBundlerDevServer.js
++++ b/build/src/start/server/webpack/WebpackBundlerDevServer.js
+@@ -46,7 +46,7 @@ function _interopRequireWildcard(obj) {
+ }
+ const debug = require("debug")("expo:start:server:webpack:devServer");
+ function assertIsWebpackDevServer(value) {
+-    if (!(value == null ? void 0 : value.sockWrite)) {
++    if (!(value == null ? void 0 : value.sendMessage)) {
+         var ref;
+         var ref1;
+         throw new _errors.CommandError("WEBPACK", value ? "Expected Webpack dev server, found: " + ((ref1 = (ref = value.constructor) == null ? void 0 : ref.name) != null ? ref1 : value) : "Webpack dev server not started yet.");
+@@ -71,7 +71,7 @@ class WebpackBundlerDevServer extends _bundlerDevServer.BundlerDevServer {
+         // Default webpack-dev-server sockets use "content-changed" instead of "reload" (what we use on native).
+         // For now, just manually convert the value so our CLI interface can be unified.
+         const hackyConvertedMessage = method === "reload" ? "content-changed" : method;
+-        this.instance.server.sockWrite(this.instance.server.sockets, hackyConvertedMessage, params);
++        this.instance.server.sendMessage(this.instance.server.sockets, hackyConvertedMessage, params);
+     }
+     async attachNativeDevServerMiddlewareToDevServer({ server , middleware , attachToServer , logger  }) {
+         const { attachInspectorProxy , LogReporter  } = await Promise.resolve().then(function() {

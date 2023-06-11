@@ -2432,6 +2432,77 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/cli@patch:@expo/cli@npm%3A0.7.3#./.yarn/patches/@expo-cli-npm-0.7.3-b8fe3aaa8f.patch::locator=root-workspace-0b6124%40workspace%3A.":
+  version: 0.7.3
+  resolution: "@expo/cli@patch:@expo/cli@npm%3A0.7.3#./.yarn/patches/@expo-cli-npm-0.7.3-b8fe3aaa8f.patch::version=0.7.3&hash=b847a4&locator=root-workspace-0b6124%40workspace%3A."
+  dependencies:
+    "@babel/runtime": ^7.20.0
+    "@expo/code-signing-certificates": 0.0.5
+    "@expo/config": ~8.0.0
+    "@expo/config-plugins": ~6.0.0
+    "@expo/dev-server": 0.3.0
+    "@expo/devcert": ^1.0.0
+    "@expo/json-file": ^8.2.37
+    "@expo/metro-config": ~0.7.0
+    "@expo/osascript": ^2.0.31
+    "@expo/package-manager": ~1.0.0
+    "@expo/plist": ^0.0.20
+    "@expo/prebuild-config": 6.0.1
+    "@expo/rudder-sdk-node": 1.1.1
+    "@expo/spawn-async": 1.5.0
+    "@expo/xcpretty": ^4.2.1
+    "@urql/core": 2.3.6
+    "@urql/exchange-retry": 0.3.0
+    accepts: ^1.3.8
+    arg: 4.1.0
+    better-opn: ~3.0.2
+    bplist-parser: ^0.3.1
+    cacache: ^15.3.0
+    chalk: ^4.0.0
+    ci-info: ^3.3.0
+    debug: ^4.3.4
+    env-editor: ^0.4.1
+    form-data: ^3.0.1
+    freeport-async: 2.0.0
+    fs-extra: ~8.1.0
+    getenv: ^1.0.0
+    graphql: 15.8.0
+    graphql-tag: ^2.10.1
+    https-proxy-agent: ^5.0.1
+    internal-ip: 4.3.0
+    is-root: ^2.1.0
+    js-yaml: ^3.13.1
+    json-schema-deref-sync: ^0.13.0
+    md5-file: ^3.2.3
+    md5hex: ^1.0.0
+    minipass: 3.1.6
+    node-fetch: ^2.6.7
+    node-forge: ^1.3.1
+    npm-package-arg: ^7.0.0
+    ora: 3.4.0
+    pretty-bytes: 5.6.0
+    progress: 2.0.3
+    prompts: ^2.3.2
+    qrcode-terminal: 0.11.0
+    requireg: ^0.2.2
+    resolve-from: ^5.0.0
+    semver: ^6.3.0
+    send: ^0.18.0
+    slugify: ^1.3.4
+    structured-headers: ^0.4.1
+    tar: ^6.0.5
+    tempy: ^0.7.1
+    terminal-link: ^2.1.1
+    text-table: ^0.2.0
+    url-join: 4.0.0
+    wrap-ansi: ^7.0.0
+    ws: ^8.12.1
+  bin:
+    expo-internal: build/bin/cli
+  checksum: 3a6d42942146720e86dbe5f212ea12624cab287c6a47d8d8213b1af296b2bdb024dfa9475a4636226e7d1140d7d1b63e35522d7d9197515a11e81f7e760da31b
+  languageName: node
+  linkType: hard
+
 "@expo/code-signing-certificates@npm:0.0.5":
   version: 0.0.5
   resolution: "@expo/code-signing-certificates@npm:0.0.5"

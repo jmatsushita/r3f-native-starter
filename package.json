@@ -22,5 +22,9 @@
     "react-native": "0.71.3",
     "react-native-web": "~0.18.10",
     "three": "^0.145.0"
+  },
+  "packageManager": "yarn@3.6.0",
+  "resolutions": {
+    "@expo/cli@0.7.3": "patch:@expo/cli@npm%3A0.7.3#./.yarn/patches/@expo-cli-npm-0.7.3-b8fe3aaa8f.patch"
   }
 }
